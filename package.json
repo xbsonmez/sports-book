@@ -3,21 +3,30 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build  --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "bundle-analyzer": "ANALYZE=true next build --webpack"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
+    "@tanstack/react-virtual": "^3.14.6",
+    "axios": "^1.18.1",
     "next": "16.2.10",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-error-boundary": "^6.1.2",
+    "react-redux": "^9.3.0",
+    "redux-persist": "^6.0.0"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "^16.2.10",
     "@tailwindcss/postcss": "^4",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "prettier": "^3.9.5",
     "tailwindcss": "^4"
   }
 }
