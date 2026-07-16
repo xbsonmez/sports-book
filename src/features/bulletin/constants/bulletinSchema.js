@@ -1,9 +1,17 @@
 export const STATIC_START_COLS = [
-  { key: "event", label: "Event Count", cssClass: "border-r border-gray-200 px-2 py-1 text-left flex-1 min-w-64" },
+  {
+    key: "event",
+    label: "Event Count",
+    cssClass: "border-r border-gray-200 px-2 py-1 text-left flex-1 min-w-64",
+  },
 ];
 
 export const STATIC_MIDDLE_COLS = [
-  { key: "comments", label: "Yorumlar", cssClass: "border-r border-gray-200 px-2 py-1 w-24 text-center" },
+  {
+    key: "comments",
+    label: "Yorumlar",
+    cssClass: "border-r border-gray-200 px-2 py-1 w-24 text-center",
+  },
   { key: "mbs", label: "", cssClass: "border-r border-gray-200 px-2 py-1 w-8 text-center" },
 ];
 
@@ -34,17 +42,6 @@ export const BULLETIN_MARKET_GROUPS = [
     ],
   },
   {
-    ocgId: "2",
-    label: "Çifte Şans",
-    visible: true,
-    cssClass: "border-r border-gray-200 px-2 py-1 w-12 text-center",
-    outcomes: [
-      { ocId: "3", label: "1-X" },
-      { ocId: "4", label: "1-2" },
-      { ocId: "5", label: "X-2" },
-    ],
-  },
-  {
     ocgId: "6",
     label: "Handikap",
     visible: true,
@@ -61,11 +58,17 @@ export const BULLETIN_MARKET_GROUPS = [
     label: "Handikap2",
     visible: true,
     cssClass: "border-r border-gray-200 px-2 py-1 w-12 text-center",
+    outcomes: [{ ocId: "95", label: "H2" }],
+  },
+  {
+    ocgId: "2",
+    label: "Çifte Şans",
+    visible: true,
+    cssClass: "border-r border-gray-200 px-2 py-1 w-12 text-center",
     outcomes: [
-      { ocId: "95", label: "H2" },
-      { ocId: "96", label: "1-X" },
-      { ocId: "97", label: "1-2" },
-      { ocId: "98", label: "X-2" },
+      { ocId: "3", label: "1-X" },
+      { ocId: "4", label: "1-2" },
+      { ocId: "5", label: "X-2" },
     ],
   },
   {
